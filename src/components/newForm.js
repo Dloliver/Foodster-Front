@@ -2,7 +2,7 @@ import {useState} from 'react'
 import axios from 'axios';
 
 const NewForm = (props) => {
-const {setLogs} = props
+const {setFoods} = props
 
 const [newName, setName] = useState('')
 const [newLocation, setLocation] = useState('')
@@ -46,7 +46,7 @@ const handleNewFoodsterFormSubmit = (event) => {
       axios
         .get('http://localhost:3000/foodster')
         .then((response)=> {
-          setLogs(response.data);
+          setFoods(response.data);
         })
     })
 }
@@ -72,3 +72,7 @@ return (
 )
 
 }
+
+
+
+export default NewForm
