@@ -18,10 +18,10 @@ const Foods = props => {
     <div>
     <h3>{food.name}</h3>
     {food.location && <p>{food.location}</p>}
-    {food.unsoldgoods && <p>{food.unsoldgoods}</p>}
+    {food.unsoldGoods && <p>{food.unsoldgoods}</p>}
     {food.image && <p>{food.image}</p>}
     {food.price && <p>{food.price}</p>}
-    {food.curbsidepickup && <p>{food.curbsidepickup}</p>}
+    {food.curbsidePickup && <p>{food.curbsidepickup}</p>}
     <button onCLick={handleDelete}>Delete</button>
     <UpdateForm food={food} setFoods={setFoods} />
     </div>

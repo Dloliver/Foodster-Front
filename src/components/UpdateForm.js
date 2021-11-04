@@ -35,10 +35,10 @@ const UpdateForm = props => {
     {
       name: newName || foods.name,
       location: newLocation || foods.location,
-      unsoldgoods: newUnsoldGoods || foods.location,
+      unsoldGoods: newUnsoldGoods || foods.location,
       image: newImage || foods.image,
       price: newPrice || foods.price,
-      curbsidepickup: newCurbsidePickup || foods.newCurbsidePickup
+      curbsidePickup: newCurbsidePickup || foods.newCurbsidePickup
     }
   )
   .then(() => {

@@ -38,10 +38,10 @@ const handleNewFoodsterFormSubmit = (event) => {
     {
       name: newName,
       location: newLocation,
-      unsoldgoods: newUnsoldGoods,
+      unsoldGoods: newUnsoldGoods,
       image: newImage,
       price: newPrice,
-      curbsidepickup: newCurbsidePickup,
+      curbsidePickup: newCurbsidePickup,
     }).then(()=> {
       axios
         .get('http://localhost:3000/foodster')
