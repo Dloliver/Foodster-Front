@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+const App = () => {
+  const [foodster, setFoodster] = useState([])
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+useEffect(() =>{
+  axios
+  .get('http://localhost:3000/foodster')
+  .then((response) =>{
+    setFoodster(response.data);
+  });
+}, [])
+
+return (
+  <main>
+  <h1> Foodster </h1>
+  <NewForm setLogs={setLogs}/>
+
+
+</main>
+);
+};
+
 
 export default App;
