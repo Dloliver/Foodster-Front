@@ -5,22 +5,22 @@ import NewForm from './components/newForm';
 import Showfoods from './components/Showfood';
 
 const App = () => {
-  const [foodster, setFoodster] = useState([])
+  const [foods, setFoods] = useState([])
 
 
-useEffect(() =>{
+useEffect(() => {
   axios
   .get('http://localhost:3000/foodster')
-  .then((response) =>{
-    setFoodster(response.data);
+  .then((response) => {
+    setFoods(response.data);
   });
-}, [])
+}, []);
 
 return (
   <main>
   <h1> Foodster </h1>
-  <NewForm setFoods={setFoodster}/>
-  <Showfoods foodster={foodster} setFoods={setFoodster}/>
+  <NewForm setFoods={setFoods}/>
+  <Showfoods foods={foods} setFoods={setFoods}/>
 
 </main>
 );

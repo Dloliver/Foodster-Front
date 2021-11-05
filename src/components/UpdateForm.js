@@ -2,7 +2,7 @@ import axios from 'axios';
 import {useState} from 'react';
 
 const UpdateForm = props => {
-  const {foods, setFoods} = props;
+  const {food, setFoods} = props;
   const [newName, setName] = useState('');
   const [newLocation, setLocation] = useState('');
   const [newUnsoldGoods, setUnsoldGoods] = useState('');
@@ -31,14 +31,14 @@ const UpdateForm = props => {
 
   const handleNewFoodsterFormSubmit = (event) => {
     event.preventDefault();
-    axios.put(`http://localhost:3000/foodster/${foods._id}`,
+    axios.put(`http://localhost:3000/foodster/${food._id}`,
     {
-      name: newName || foods.name,
-      location: newLocation || foods.location,
-      unsoldGoods: newUnsoldGoods || foods.location,
-      image: newImage || foods.image,
-      price: newPrice || foods.price,
-      curbsidePickup: newCurbsidePickup || foods.newCurbsidePickup
+      name: newName || food.name,
+      location: newLocation || food.location,
+      unsoldGoods: newUnsoldGoods || food.location,
+      image: newImage || food.image,
+      price: newPrice || food.price,
+      curbsidePickup: newCurbsidePickup || food.newCurbsidePickup
     }
   )
   .then(() => {
@@ -56,7 +56,7 @@ const UpdateForm = props => {
 
 const toggleDisplay = id => {
   const form = document.getElementById(id);
-  if (form.style.disply === 'none') {
+  if (form.style.display === 'none') {
     form.style.display = 'block';
   } else {
     form.style.display = 'none';
@@ -65,8 +65,8 @@ const toggleDisplay = id => {
 
 return (
   <div>
-  <button onClick={()=>{toggleDisplay(`editForms${foods._id}`)}}>Edit</button>
-  <form id={`editForm${foods._id}`}style={{display: 'none'}} onSubmit={handleNewFoodsterFormSubmit}>
+  <button onClick={()=>{toggleDisplay(`editForm${food._id}`)}}>Edit</button>
+  <form id={`editForm${food._id}`} style={{display: 'none'}} onSubmit={handleNewFoodsterFormSubmit}>
   name: <input type="text" onChange={handleNewNameChange}/>
   <br/>
   location: <input type="text" onChange={handleNewLocation}/>

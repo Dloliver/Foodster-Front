@@ -1,14 +1,14 @@
 import Foods from './Delete.js'
 
 const Showfoods = props => {
-  const {foodster, setFoodster} = props;
+  const {foods, setFoods} = props;
 
   return (
     <section>
     <h2>Pickups available</h2>
-    {foodster.map(foods =>{
+    {foods.map(food =>{
       return(
-        <Foods key={foods._id} foods={foodster} setFoods={setFoodster} />
+        <Foods key={food._id} foods={food} setFoods={setFoods} />
       );
     })}
     </section>
