@@ -11,7 +11,7 @@ const UpdateForm = props => {
   const [newCurbsidePickup, setCurbsidePickup] = useState(false);
 
   const handleNewNameChange = (event) => {
-    setNewName(event.target.value);
+    setName(event.target.value);
   }
   const handleNewLocation = (event) => {
     setLocation(event.target.value)
@@ -66,7 +66,7 @@ const toggleDisplay = id => {
 return (
   <div>
   <button onClick={()=>{toggleDisplay(`editForms${foods._id}`)}}>Edit</button>
-  <form id={`editForm${foods._id}`}style={{display: 'none'}} onSubmit={handleUpdateSubmit}>
+  <form id={`editForm${foods._id}`}style={{display: 'none'}} onSubmit={handleNewFoodsterFormSubmit}>
   name: <input type="text" onChange={handleNewNameChange}/>
   <br/>
   location: <input type="text" onChange={handleNewLocation}/>

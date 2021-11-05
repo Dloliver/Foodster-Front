@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import NewForm from './components/NewForm';
-
+import {useState, useEffect} from 'react';
+import axios from 'axios';
+import NewForm from './components/newForm';
+import Showfoods from './components/Showfood';
 
 const App = () => {
   const [foodster, setFoodster] = useState([])
@@ -18,8 +19,8 @@ useEffect(() =>{
 return (
   <main>
   <h1> Foodster </h1>
-  <NewForm setFoods={setFoods}/>
-
+  <NewForm setFoods={setFoodster}/>
+  <Showfoods foodster={foodster} setFoods={setFoodster}/>
 
 </main>
 );

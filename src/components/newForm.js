@@ -12,7 +12,7 @@ const [newPrice, setPrice] = useState('')
 const [newCurbsidePickup, setCurbsidePickup] = useState(false)
 
 const handleNewNameChange = (event) => {
-  setNewName(event.target.value);
+  setName(event.target.value);
 }
 const handleNewLocation = (event) => {
   setLocation(event.target.value)
@@ -68,6 +68,7 @@ return (
   Curbside Pickup: <input type="checkbox" onChange={handleNewCurbsidePickup}/>
   <br/>
   <input type="submit" value="Log New Order"/>
+  </form>
   </section>
 )
 

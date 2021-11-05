@@ -28,4 +28,4 @@ const Foods = props => {
   );
 };
 
-export default Food;
+export default Foods;
