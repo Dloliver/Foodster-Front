@@ -1,3 +1,21 @@
+# Foodster
+Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission
+
+## About the App
+Foodster is a sustainability app aimed to reduce the mass food waste produced by many restaurants, grocery stores, and farms. 
+
+## Technologies Used
+<ol>
+  <li>Express</li>
+  <li>Mongo</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>React</li>
+  <li>Bootstrap</li>
+  <li>MERN stack</li>
+  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
