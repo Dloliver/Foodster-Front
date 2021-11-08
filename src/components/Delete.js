@@ -19,7 +19,7 @@ const Foods = props => {
     <h3>{foods.name}</h3>
     {foods.location && <p>{foods.location}</p>}
     {foods.unsoldGoods && <p>{foods.unsoldgoods}</p>}
-    {foods.image && <p>{foods.image}</p>}
+    {foods.image && <img src={foods.image}/>}
     {foods.price && <p>{foods.price}</p>}
     {foods.curbsidePickup && <p>{foods.curbsidepickup}</p>}
     <button onClick={handleDelete}>Delete</button>
