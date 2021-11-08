@@ -2,7 +2,11 @@ import {useState} from 'react'
 import axios from 'axios';
 
 const NewForm = (props) => {
+<<<<<<< HEAD
 const {setLogs} = props
+=======
+const {setFoods} = props
+>>>>>>> 815a3bd690b76bbe32fff92b082a63e01f3d2ab1
 
 const [newName, setName] = useState('')
 const [newLocation, setLocation] = useState('')
@@ -12,7 +16,11 @@ const [newPrice, setPrice] = useState('')
 const [newCurbsidePickup, setCurbsidePickup] = useState(false)
 
 const handleNewNameChange = (event) => {
+<<<<<<< HEAD
   setNewName(event.target.value);
+=======
+  setName(event.target.value);
+>>>>>>> 815a3bd690b76bbe32fff92b082a63e01f3d2ab1
 }
 const handleNewLocation = (event) => {
   setLocation(event.target.value)
@@ -38,37 +46,42 @@ const handleNewFoodsterFormSubmit = (event) => {
     {
       name: newName,
       location: newLocation,
-      unsoldgoods: newUnsoldGoods,
+      unsoldGoods: newUnsoldGoods,
       image: newImage,
       price: newPrice,
-      curbsidepickup: newCurbsidePickup,
+      curbsidePickup: newCurbsidePickup,
     }).then(()=> {
       axios
         .get('http://localhost:3000/foodster')
         .then((response)=> {
-          setLogs(response.data);
+          setFoods(response.data);
         })
     })
 }
 
 return (
-  <section>
-  <h2> Add Food</h2>
+  <section id="addfoodform" class="myForm">
+  <h2 > Add Food</h2>
   <form onSubmit={handleNewFoodsterFormSubmit}>
-  name: <input type="text" onChange={handleNewNameChange}/>
+  NAME: <input type="text" onChange={handleNewNameChange}/>
   <br/>
-  location: <input type="text" onChange={handleNewLocation}/>
+  LOCATION: <input type="text" onChange={handleNewLocation}/>
   <br/>
-  Unsold Goods: <input type="text" onChange={handleNewUnsoldGoods}/>
+  UNSOLD GOODS: <input type="text" onChange={handleNewUnsoldGoods}/>
   <br/>
-  image: <input type="text" onChange={handleNewImage}/>
+  IMAGE: <input type="text" onChange={handleNewImage}/>
   <br/>
-  Price: <input type="text" onChange={handleNewPrice}/>
+  PRICE: <input type="text" onChange={handleNewPrice}/>
   <br/>
-  Curbside Pickup: <input type="checkbox" onChange={handleNewCurbsidePickup}/>
+  CURBSIDE PICKUP: <input type="checkbox" onChange={handleNewCurbsidePickup}/>
   <br/>
   <input type="submit" value="Log New Order"/>
+  </form>
   </section>
 )
 
 }
+
+
+
+export default NewForm
