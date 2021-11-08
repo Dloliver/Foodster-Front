@@ -10,7 +10,7 @@ const App = () => {
 
 useEffect(() => {
   axios
-  .get('http://localhost:3000/foodster')
+  .get('https://ancient-badlands-03329.herokuapp.com/foodster')
   .then((response) => {
     setFoods(response.data);
   });

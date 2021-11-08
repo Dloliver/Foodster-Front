@@ -31,7 +31,7 @@ const UpdateForm = props => {
 
   const handleNewFoodsterFormSubmit = (event) => {
     event.preventDefault();
-    axios.put(`http://localhost:3000/foodster/${food._id}`,
+    axios.put(`https://ancient-badlands-03329.herokuapp.com/foodster/${food._id}`,
     {
       name: newName || food.name,
       location: newLocation || food.location,
@@ -42,7 +42,7 @@ const UpdateForm = props => {
     }
   )
   .then(() => {
-    axios.get('http://localhost:3000/foodster')
+    axios.get('https://ancient-badlands-03329.herokuapp.com/foodster')
     .then(response => {
       setFoods(response.data);
       toggleDisplay(event.target.id);

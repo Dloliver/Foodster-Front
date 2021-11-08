@@ -37,7 +37,7 @@ const handleNewFoodsterFormSubmit = (event) => {
   event.preventDefault();
 
   axios.post(
-    'http://localhost:3000/foodster',
+    'https://ancient-badlands-03329.herokuapp.com/foodster',
     {
       name: newName,
       location: newLocation,
@@ -47,7 +47,7 @@ const handleNewFoodsterFormSubmit = (event) => {
       curbsidePickup: newCurbsidePickup,
     }).then(()=> {
       axios
-        .get('http://localhost:3000/foodster')
+        .get('https://ancient-badlands-03329.herokuapp.com/foodster')
         .then((response)=> {
           setFoods(response.data);
         })

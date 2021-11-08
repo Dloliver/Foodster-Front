@@ -5,9 +5,9 @@ const Foods = props => {
   const {foods, setFoods} = props;
 
   const handleDelete = () => {
-    axios.delete(`http://localhost:3000/foodster/${foods._id}`)
+    axios.delete(`https://ancient-badlands-03329.herokuapp.com/foodster/${foods._id}`)
       .then(response => {
-        axios.get('http://localhost:3000/foodster')
+        axios.get('https://ancient-badlands-03329.herokuapp.com/foodster')
         .then(response => {
           setFoods(response.data);
         });
