@@ -52,20 +52,20 @@ const handleNewFoodsterFormSubmit = (event) => {
 }
 
 return (
-  <section>
-  <h2> Add Food</h2>
+  <section id="addfoodform" class="myForm">
+  <h2 > Add Food</h2>
   <form onSubmit={handleNewFoodsterFormSubmit}>
-  name: <input type="text" onChange={handleNewNameChange}/>
+  NAME: <input type="text" onChange={handleNewNameChange}/>
   <br/>
-  location: <input type="text" onChange={handleNewLocation}/>
+  LOCATION: <input type="text" onChange={handleNewLocation}/>
   <br/>
-  Unsold Goods: <input type="text" onChange={handleNewUnsoldGoods}/>
+  UNSOLD GOODS: <input type="text" onChange={handleNewUnsoldGoods}/>
   <br/>
-  image: <input type="text" onChange={handleNewImage}/>
+  IMAGE: <input type="text" onChange={handleNewImage}/>
   <br/>
-  Price: <input type="text" onChange={handleNewPrice}/>
+  PRICE: <input type="text" onChange={handleNewPrice}/>
   <br/>
-  Curbside Pickup: <input type="checkbox" onChange={handleNewCurbsidePickup}/>
+  CURBSIDE PICKUP: <input type="checkbox" onChange={handleNewCurbsidePickup}/>
   <br/>
   <input type="submit" value="Log New Order"/>
   </form>
