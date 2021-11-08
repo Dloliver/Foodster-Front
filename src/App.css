@@ -1,5 +1,81 @@
+main{
+background-color: ;
+text-align: center;
+}
+
+#nav{
+  position: sticky; top:0;
+}
+
+.items {
+  margin: 10px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-style: solid;
+}
+
+.myForm{
+  background: grey;
+}
+
+button {
+border-radius: 25px;
+
+}
+
+.item {
+margin: 20px;
+border-style: double;
+}
+
+h2{
+  padding: 20px;
+}
+
 .App {
   text-align: center;
+}
+
+header{
+  text-align: center;
+  background: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  background-attachment: fixed;
+  background-size: contain;
+  height: 200px;
+  padding:0px;
+}
+
+
+h1 {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 15px;
+}
+
+.header{
+  padding-top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+form{
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+  margin-right: 50%;
+  font-weight: bold;
+}
+
+img{
+  height: 300px;
+  width: 300px;
 }
 
 .App-logo {
@@ -36,3 +112,24 @@
     transform: rotate(360deg);
   }
 }
+
+  .myForm {
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    background: rgba(134, 94, 66, .7);
+    padding: 1.2em;
+  }
+  .myForm > label  {
+    grid-column: labels;
+    grid-row: auto;
+  }
+  .myForm > input,
+  .myForm > textarea,
+  .myForm > button {
+    grid-column: controls;
+    grid-row: auto;
+    border: none;
+    padding: 1em;
+  }
