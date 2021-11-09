@@ -1,14 +1,28 @@
 # Foodster
 ![EST 2021 (1)](https://user-images.githubusercontent.com/89334274/140855034-2b698369-45e7-47b2-988c-3c34c6c8a8bb.png)
 <ol>
-Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission
+Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission ~ Visit the app here: https://agile-fjord-64790.herokuapp.com/
 </ol>
 
 ### Our Mission
 <ol>
-Foodster is a sustainability app aimed to reduce the mass food waste produced by many restaurants, grocery stores, and farms. Users can view heavily discounted  unsold goods from establishments around the US, establishments can input and edit their unsold goods, and delete their items as well. By creating a platform where business owners can post their surplus or unsold goods, we can limit the overconsumption of products that ultimately leads to waste as well as the large loss of revenue for these establishments.
+Foodster is a sustainability app aimed to spur conversation in reducing the mass food waste produced by many restaurants, grocery stores, and farms. Users can view heavily discounted  unsold goods from establishments around the US, establishments can input and edit their unsold goods, and delete their items as well. By creating a platform where business owners can post their surplus or unsold goods, we can limit the overconsumption of products that ultimately leads to waste as well as the large loss of revenue for these establishments.
 </ol>
-### Some Food For Thought!
+
+### Did You Know...? Some Food For Thought!
+***
+  * Globally, 1.4 billion tons of food goes to waste every year...
+  * However, the US leads the world in annual food waste with a whopping 40 million tons (80 billion pounds)!
+  * Prior to COVID-19, 35 million people in America (10 million of those being children) suffered from food insecurity. Those numbers skyrocketed with the financial fallout and number of jobs lost during the pandemic. 
+  * Specifically in the US, food is plentiful and costly: this validates many impulse purchases from consumers who buy way more than they can eat because the food itself is undervalued. In turn, that food goes to waste. There is also a small percentage of people who compost. 
+  * 40% of food waste comes from restaurants!
+ 
+### How to Combat Overconsumption and Food Waste in Your Community!
+***
+* KNOW YOUR LABLES! The *Best If Used By* label describes food that is safe to consume but may not taste the same past the given date whereas the *Use By* label applies to highly perishable food items that cause food safety concern over time.
+* SCOUR YOUR PANTRY! Donate surplus, non perishable canned goods to your local shelters, women's centers, and food banks. 
+* CREATE COMMUNITY! Did that summer garden side-project turn out to be way more successful than you had anticipated? Consider gifting produce to your neighbors and community members! Farmers also appreciate any extra produce they can feed their animals!
+* BE INTENTIONAL! Practice intentional shopping methods. It can be easy to get lost in the aisles of grocery stores, stopping every few seconds to marvel at new products. Before doing your shopping have a plan of what you will be cooking or using certain ingredients for and stick to that list! 
 
 
 ## Technologies Used
@@ -22,7 +36,7 @@ Foodster is a sustainability app aimed to reduce the mass food waste produced by
   <li>React</li>
   <li>Bootstrap</li>
   <li>MERN stack</li>
- </ol>
+ 
   
 
 # Getting Started with Create React App
