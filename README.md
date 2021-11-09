@@ -2,6 +2,7 @@
 Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission
 
 ## About the App
+![EST 2021 (1)](https://user-images.githubusercontent.com/89334274/140855034-2b698369-45e7-47b2-988c-3c34c6c8a8bb.png)
 Foodster is a sustainability app aimed to reduce the mass food waste produced by many restaurants, grocery stores, and farms. 
 
 ## Technologies Used
