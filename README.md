@@ -1,13 +1,20 @@
 # Foodster
-Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission
-
-## About the App
 ![EST 2021 (1)](https://user-images.githubusercontent.com/89334274/140855034-2b698369-45e7-47b2-988c-3c34c6c8a8bb.png)
-Foodster is a sustainability app aimed to reduce the mass food waste produced by many restaurants, grocery stores, and farms. 
+<ol>
+Created by Jamie Alcazar & Dennis Oliver for their GA SEIR P3 submission
+</ol>
+
+### Our Mission
+<ol>
+Foodster is a sustainability app aimed to reduce the mass food waste produced by many restaurants, grocery stores, and farms. Users can view heavily discounted  unsold goods from establishments around the US, establishments can input and edit their unsold goods, and delete their items as well. By creating a platform where business owners can post their surplus or unsold goods, we can limit the overconsumption of products that ultimately leads to waste as well as the large loss of revenue for these establishments.
+</ol>
+### Some Food For Thought!
+
 
 ## Technologies Used
 <ol>
   <li>Express</li>
+  <li>Canva</li>
   <li>Mongo</li>
   <li>HTML</li>
   <li>CSS</li>
@@ -15,6 +22,7 @@ Foodster is a sustainability app aimed to reduce the mass food waste produced by
   <li>React</li>
   <li>Bootstrap</li>
   <li>MERN stack</li>
+ </ol>
   
 
 # Getting Started with Create React App
